@@ -2,10 +2,10 @@ name = "cf-auth-flag-worker"
 main = "src/index.js"
 compatibility_date = "2025-08-13"
 workers_dev = false
-account_id = "804ece9da084d891d089f87d84b0f6ad"
+account_id = ""
 
 [env.production]
-zone_id = "c3376f786563743a0ea080f0a726fc14"
+zone_id = ""
 
 [[env.production.routes]]
 pattern = "myinstance.bournemd.com/secure*"
