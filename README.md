@@ -18,7 +18,7 @@ This project demonstrates a secure, Cloudflare-powered application that integrat
 
 ## 🛡️ Security
 
-- Origin secured with Full (Strict) TLS using a non-Cloudflare certificate
+- Origin secured with Full (Strict) TLS using a Cloudflare Origin CA certificate
 - Cloudflare Tunnel prevents direct IP access to origin
 - Access restricted to specific users and domains via Cloudflare Access and IdP integration
 
@@ -34,7 +34,6 @@ This project demonstrates a secure, Cloudflare-powered application that integrat
 
 - Worker deployed with Wrangler CLI
 - Route and R2 binding configured manually due to CLI limitations
-- Project includes code for HTML response rendering and binary asset retrieval
 
 ## 🔗 Demo URLs
 
