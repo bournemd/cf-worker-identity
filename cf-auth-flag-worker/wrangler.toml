@@ -2,16 +2,15 @@ name = "cf-auth-flag-worker"
 main = "src/index.js"
 compatibility_date = "2025-08-13"
 workers_dev = false
-account_id = ""
+#account_id = ""
+#zone_id = ""
 
-[env.production]
-zone_id = ""
-
-[[env.production.routes]]
+[[routes]]
 pattern = "myinstance.bournemd.com/secure*"
+zone_name = "bournemd.com"
 
-[[env.production.r2_buckets]]
+[[r2_buckets]]
 binding = "FLAGS_BUCKET"
 bucket_name = "country-flags"
-preview_bucket_name = "country-flags"
+#preview_bucket_name = "country-flags"
 
